@@ -1,8 +1,8 @@
-# 📊 Analyseur de Trafic Suspect PCAP
+# Analyseur de Trafic Suspect PCAP
 
 Outil d'analyse automatisée de fichiers PCAP pour détecter les flux réseau non désirables sur Android.
 
-## 📁 Structure du Projet
+## Structure du Projet
 
 ```
 projet_analyseur/
@@ -15,7 +15,7 @@ projet_analyseur/
 └── README.md               # Cette documentation
 ```
 
-## 🎯 Fonctionnalités
+## Fonctionnalités
 
 ### Détection Automatique
 
@@ -27,13 +27,13 @@ projet_analyseur/
 
 ### Rapport HTML Interactif
 
-- 📈 Statistiques globales en cartes visuelles
-- 🚨 Liste détaillée des flux suspects avec niveaux de sévérité
-- 📡 Tableau des flux persistants en arrière-plan
-- 🔍 Graphiques de répartition des protocoles
-- 📋 Évaluation automatique du niveau de risque
+- Statistiques globales en cartes visuelles
+- Liste détaillée des flux suspects avec niveaux de sévérité
+- Tableau des flux persistants en arrière-plan
+- Graphiques de répartition des protocoles
+- Évaluation automatique du niveau de risque
 
-## 🚀 Installation
+## Installation
 
 ### Prérequis
 
@@ -81,7 +81,7 @@ pip install -r requirements.txt
 pyshark>=0.6
 ```
 
-## 💻 Utilisation
+## Utilisation
 
 ### Commande de Base
 
@@ -111,7 +111,7 @@ python main.py capture.pcap rapport_facebook.html
 firefox rapport_facebook.html
 ```
 
-## 📊 Sortie du Programme
+## Sortie du Programme
 
 ### Terminal
 
@@ -146,18 +146,18 @@ firefox rapport_facebook.html
                   RÉSUMÉ DE L'ANALYSE
 ======================================================================
 
-📊 Statistiques Globales:
+Statistiques Globales:
    - Flux suspects détectés: 8
    - Flux persistants en arrière-plan: 3
    - Requêtes DNS: 142
    - Conversations IP: 47
 
-🔴 Top 5 Flux Arrière-plan:
+Top 5 Flux Arrière-plan:
    - 192.168.1.45 → 157.240.13.35: 52 paquets en 27.3s
    - 192.168.1.45 → 142.250.185.106: 38 paquets en 22.1s
    - 192.168.1.45 → 172.217.16.195: 31 paquets en 20.5s
 
-📡 Top 5 Protocoles:
+Top 5 Protocoles:
    - TLS: 1,247 paquets
    - DNS: 284 paquets
    - QUIC: 156 paquets
@@ -184,7 +184,7 @@ Le rapport généré contient :
 5. **Répartition Protocoles** : Barres de progression visuelles
 6. **Conclusion** : Évaluation automatique du risque
 
-## 🎨 Architecture du Code
+## Architecture du Code
 
 ### main.py
 
@@ -221,7 +221,7 @@ Styles CSS incluant :
 - Codes couleurs pour les sévérités
 - Support impression
 
-## 📖 Critères de Détection
+## Critères de Détection
 
 ### Flux Persistants (MOYENNE-HAUTE)
 
@@ -250,7 +250,7 @@ if requetes_vers_domaine > 10:
     # Possible DNS tunneling
 ```
 
-## 🔧 Personnalisation
+## Personnalisation
 
 ### Modifier les Seuils de Détection
 
@@ -283,7 +283,7 @@ Dans `styles.py`, lignes 62-81 :
 .moyenne { background: #ffd93d; }   # Jaune
 ```
 
-## 🐛 Dépannage
+## Dépannage
 
 ### Erreur : "Module pyshark not found"
 
@@ -317,32 +317,16 @@ Vérifier que le fichier PCAP est valide :
 tshark -r capture.pcap -c 10
 ```
 
-## 📝 Intégration dans un Rapport LaTeX
+## Intégration dans un Rapport LaTeX
 
 Voir la section LaTeX fournie séparément pour intégrer cette analyse dans votre rapport académique.
-
-## 🤝 Contribution
-
-Contributions bienvenues ! Pour ajouter des fonctionnalités :
-
-1. Créer une nouvelle méthode de détection dans `analyseur.py`
-2. Ajouter la section correspondante dans `rapport_generator.py`
-3. Mettre à jour les styles si nécessaire dans `styles.py`
 
 ## 📄 Licence
 
 Ce projet est fourni à des fins éducatives.
-
-## 👨‍💻 Auteur
-
-Développé pour l'analyse de sécurité réseau Android.
 
 ## 🔗 Ressources
 
 - [Documentation PyShark](https://github.com/KimiNewt/pyshark)
 - [Wireshark Display Filters](https://wiki.wireshark.org/DisplayFilters)
 - [PCAP Analysis Guide](https://www.wireshark.org/docs/)
-
----
-
-**Note**: Assurez-vous d'avoir l'autorisation légale avant de capturer et analyser le trafic réseau.

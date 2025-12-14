@@ -1,0 +1,13 @@
+# Requirements pour l'Analyseur de Trafic Suspect PCAP
+# Python 3.8+
+
+# Analyse de paquets réseau
+# pyshark>=0.6
+
+# (Optionnel) Pour une analyse plus avancée
+# scapy>=2.5.0
+# dpkt>=1.9.8
+
+# (Optionnel) Pour des graphiques avancés
+# matplotlib>=3.5.0
+# pandas>=1.4.0
